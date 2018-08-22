@@ -1,20 +1,20 @@
 package com.example.android.quakereport;
 
 public class Earthquake {
-    private String location;
-    private String mag;
-    private String date;
+    private String mLocation;
+    private String mMag;
+    private String mDate;
 
     /**
      * Create location object with no img
-     * @param nLocation name of location
-     * @param nMag magnitude of the earthquake
-     * @param nDate date of the earthquake
+     * @param location name of location
+     * @param mag magnitude of the earthquake
+     * @param date date of the earthquake
      */
-    public Earthquake(String nLocation, String nMag, String nDate) {
-        location = nLocation;
-        mag = nMag;
-        date = nDate;
+    public Earthquake(String location, String mag, String date) {
+        this.mLocation = location;
+        this.mMag = mag;
+        this.mDate = date;
     }
 
     /**
@@ -22,7 +22,7 @@ public class Earthquake {
      * @return String
      */
     public String getLocation() {
-        return location;
+        return mLocation;
     }
 
     /**
@@ -30,7 +30,7 @@ public class Earthquake {
      * @return String
      */
     public String getMag() {
-        return mag;
+        return mMag;
     }
 
     /**
@@ -38,6 +38,6 @@ public class Earthquake {
      * @return String
      */
     public String getDate() {
-        return date;
+        return mDate;
     }
 }

@@ -41,11 +41,11 @@ public class EarthquakeAdapter extends ArrayAdapter {
 
         // get the address TextView and set it to the location's name a the given position
         TextView earthquakeMag = convertView.findViewById(R.id.mag);
-        earthquakeMag.setText(currentEarthquake.getMag());
+        earthquakeMag.setText(currentEarthquake.getMag().toString());
 
         // get the hours TextView and set it to the location's name a the given position
         TextView earthquakeDate = convertView.findViewById(R.id.date);
-        earthquakeDate.setText(currentEarthquake.getDate());
+        earthquakeDate.setText(String.valueOf(currentEarthquake.getDate()));
 
         return convertView;
     }

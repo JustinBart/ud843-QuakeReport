@@ -2,8 +2,8 @@ package com.example.android.quakereport;
 
 public class Earthquake {
     private String mLocation;
-    private String mMag;
-    private String mDate;
+    private Double mMag;
+    private int mDate;
 
     /**
      * Create location object with no img
@@ -11,7 +11,7 @@ public class Earthquake {
      * @param mag magnitude of the earthquake
      * @param date date of the earthquake
      */
-    public Earthquake(String location, String mag, String date) {
+    public Earthquake(String location, Double mag, int date) {
         this.mLocation = location;
         this.mMag = mag;
         this.mDate = date;
@@ -29,7 +29,7 @@ public class Earthquake {
      * magnitude of the earthquake
      * @return String
      */
-    public String getMag() {
+    public Double getMag() {
         return mMag;
     }
 
@@ -37,7 +37,7 @@ public class Earthquake {
      * date of the earthquake
      * @return String
      */
-    public String getDate() {
+    public int getDate() {
         return mDate;
     }
 }
